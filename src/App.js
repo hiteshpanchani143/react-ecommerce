@@ -5,6 +5,8 @@ import LoginPage from './pages/LoginPage';
 import SignUpPage from './pages/SignUpPage';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import CartPage from './pages/CartPage';
+import Checkout from './pages/Checkout';
+import ProductDetailsPage from './pages/ProductDetailsPage';
 
 function App() {
   return (
@@ -15,11 +17,12 @@ function App() {
                <Route  path='/home'  element={<> <Home/>  </>}/>
                <Route path='/signin' element={<SignUpPage/>}/>
                <Route path='/cart' element={<CartPage/>}/>
+               <Route path='/checkout' element={<Checkout/>}/>
+               <Route path='/product-details' element={<ProductDetailsPage/>}/>
            </Routes>
           </BrowserRouter>
     </div>
   );
 }
-
 export default App;
 

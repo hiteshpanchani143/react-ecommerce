@@ -107,7 +107,7 @@ export default function Cart() {
                           className="font-medium text-indigo-600 hover:text-indigo-500"
                           onClick={() => setOpen(false)}
                         >
-                          <Link to='/home'>
+                          <Link to='/'>
                           Continue Shopping
                           <span aria-hidden="true"> &rarr;</span>
                           </Link>

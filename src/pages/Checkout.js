@@ -264,7 +264,7 @@ const Checkout = () => {
                   Choose from Existing addresses
                 </p>
 
-                <ul role="list">
+                <ul>
       {addresses.map((address) => (
         <li key={address.email} className="flex justify-between gap-x-6  p-5 border-solid border-2 border-gray-200">
           <div className="flex min-w-0 gap-x-4">
@@ -343,7 +343,7 @@ const Checkout = () => {
      <div className="border-t border-gray-200 px-4 py-6 sm:px-6">
        <h1 className='text-4xl font-bold tracking-tight text-gray-900 my-12'>Cart</h1>
                       <div className="flow-root">
-                        <ul role="list" className="-my-6 divide-y divide-gray-200">
+                        <ul className="-my-6 divide-y divide-gray-200">
                           {products.map((product) => (
                             <li key={product.id} className="flex py-6">
                               <div className="h-24 w-24 flex-shrink-0 overflow-hidden rounded-md border border-gray-200">
@@ -413,7 +413,7 @@ const Checkout = () => {
                           type="button"
                           className="font-medium text-indigo-600 hover:text-indigo-500"
                         >
-                          <Link to='/home'>
+                          <Link to='/'>
                           Continue Shopping
                           <span aria-hidden="true"> &rarr;</span>
                           </Link>
